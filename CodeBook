@@ -1,0 +1,4 @@
+whole: the merger one dataset
+msd: the dataset consisting of those variables with mean and standard deviation
+nm: colnames of msd; this if for the convenience of writing many lines of codes
+newmsd: this is a dataset after I take the average of each variable for each activity and each subject.
