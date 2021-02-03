@@ -34,10 +34,10 @@ library(dplyr)
 msd <- select(whole,subject,code,
               contains("mean")|contains("std"))
 
-#Uses descriptive activity names to name the activities in the data set
+#4#Uses descriptive activity names to name the activities in the data set
 msd$code <- activities[msd$code,2] 
 
-#4#Appropriately labels the data set with descriptive variable names. 
+#5#Appropriately labels the data set with descriptive variable names. 
 nm <- names(msd)
 nm[2] <- "activity"
 nm <- gsub("^t","Time",nm)
@@ -48,7 +48,7 @@ nm <- gsub("Gyro","Gyroscope",nm)
 nm <- gsub("Mag","Magnitude",nm)
 names(msd) <- nm
 
-#create a second, independent tidy data set with the average of each variable for each activity and each subject.
+#6#create a second, independent tidy data set with the average of each variable for each activity and each subject.
 library(tidyr)
 newmsd <- group_by(msd,activity,subject) %>%
     summarize_all(mean)
