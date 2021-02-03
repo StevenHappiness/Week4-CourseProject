@@ -1,6 +1,6 @@
 # Week4-CourseProject
-for this project, we need to create dataframes from the given zip data, and then do the five steps required by the instructions and eventually we have one clean tidydata. you could see codes in run_anlysis.R
-codebook explains those notations in the run_analysis, especially for the ultimate tidydata
+for this project, we need to create dataframes from the given zip data, and then do the five steps required by the instructions and eventually we have one clean tidydata. you could see codes in run_anlysis.R.
+Plus, codebook explains those notations in the run_analysis, especially for the ultimate tidydata
 
 
 
